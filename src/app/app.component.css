@@ -1,0 +1,29 @@
+
+.example-container {
+  height: 400px;
+  overflow: auto;
+  position: relative; /* Required for sticky positioning to work */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mat-header-row {
+  position: sticky;
+  top: 0;
+  z-index: 10; /* Ensure the header stays on top */
+  background-color: blue; /* Set the header background color to blue */
+  color: white; /* Optional: Set the text color to white for better contrast */
+}
+
+.mat-header-cell {
+  background-color: blue; /* Ensures header cells are also styled */
+  color: white; /* Optional: Set the text color to white for better contrast */
+}
+
+.mat-row {
+  z-index: 1; /* Rows should be behind the header */
+}
+
